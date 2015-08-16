@@ -1,0 +1,61 @@
+demo()
+q()
+1+2
+sqrt(10)
+x <- sqrt(2)
+x
+x^2
+break <- 1
+x <- 1:4
+x
+(x <- 1:4)
+c(1.0, 2.0, 3.0, 4.0, 5.0)
+x <- c(1.0, 2.0, 3.0, 4.0, 5.0)
+sqrt(x)
+log(x)
+q()
+1 +
+2
+x <- sqrt(2)
+x <- c(1,2,3,4)
+z<- c(0,5,7,9)
+cor(x,z,method="pearson")
+cor(x,z,method="spearman")
+1:5
+date()
+myfunc01 <- function() {}
+myfunc01 <- function() {
+return(1)
+}
+myfunc01
+myfunc01()
+myfunc02 <- function(x) {
+return(x)
+}
+myfunc02(x)
+myabs <- function(x){
+if (x < 0) { return(-x)}
+else { return(x)}
+}
+myabs(-2)
+f <- function(x) exp(x)-2
+(result <- uniroot(f, c(0,1)))
+result$root
+polyroot(c(2,3,1))
+f <- expression(a*x^4)
+D(f, "x")
+polyroot(c(2,3,1))
+D(f, "x")
+q()
+metallica <- c("Lars", "James", "Jason", "Kirk")
+metallica
+metallica <- metallica[metallica != "Jason"]
+metallica
+metallica <- c(metallica, "Rob")
+metallica
+etallica <- c("Lars", "James", "Jason", "Kirk")
+metallica
+source("/Users/yamato/Programming/R/textbooks/DiscoveringStatUsingR/chap03/3_1.R")
+metallica
+getwd()
+getwd()

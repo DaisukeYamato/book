@@ -1,0 +1,445 @@
+(29.49-28.64)/28.64
+(109.04-105.06)/105.06
+(29.49-28.64)/28.64
+log(109.04/105.06)
+log(29.49/28.64)
+(109.04-105.06)/105.06
+R_1 <- (109.04-105.06)/105.06
+(1 + R_1)^12 -1
+R_2 <- (29.49-28.64)/28.64
+(1 + R_2)^12 -1
+r_1 <- log(109.04/105.06)
+12 * r_1
+r_2 <- log(29.49/28.64)
+12 * r_2
+(1 + R_1)^12 -1
+((1 + R_1)^12 -1) * 10000
+(1 + R_2)^12 -1
+0.2*R_1 + 0.8*R_2
+log(1 + 0.2*R_1 + 0.8*R_2)
+100000*(0.001 )
+qnorm(0.05)
+100000*(0.001 - 1.645 * 0.05)
+100000*(0.001 - 1.645 * 0.09)
+100000*(0.01 - 1.645 * 0.09)
+100000*(0.001 - 1.645 * sqrt(12)*0.09)
+100000*(0.001 - 1.645 * sqrt(12*0.09))
+100000*(0.001 - 1.645 * sqrt(12)*0.05)
+100000*(0.01 - 1.645 * sqrt(12)*0.09)
+(0.001 - 1.645 * 0.09)
+(exp((0.001 - 1.645 * 0.09) ) - 1) * 100000
+(exp((0.001 - 1.645 * 0.05) ) - 1) * 100000
+(exp((0.01 - 1.645 * 0.09) ) - 1) * 100000
+(exp((0.001 - 1.645 * sqrt(12) * 0.05) ) - 1) * 100000
+(exp((0.001*12 - 1.645 * sqrt(12) * 0.05) ) - 1) * 100000
+(exp((0.01*12 - 1.645 * sqrt(12) * 0.09) ) - 1) * 100000
+3/0.55
+1.5/(1-5.45^2)
+1.5^2/(1-5.45^2)
+1.5^2/(1-0.45^2)
+1.5^2*0.45
+2.8213^2*0.45
+2.8213*0.45
+0.77^2
+sqrt(0.6)
+sqrt(0.72)
+64.68-0.62*81.4
+13.1 - 64.68-0.62*81.4
+13.1 -( 64.68-0.62*81.4 )
+2.869/3.008
+76+0.43*30 +0.35*72
+950^(1.08)^8
+950*(1.08)^8
+ls
+0.88^4
+1-0.88^4
+qnorm(0.01)
+qnorm(0.025)
+qnorm(0.01)
+248.3-244.8 - abs(qnorm(0.01)) * 2/sqrt(10)
+248.3-244.8 + abs(qnorm(0.01)) * 2/sqrt(10)
+248.3-244.8
+3.5-2.65
+3.5-6.48
+3.5-6.13
+3.5-0.87
+195528-1627
+1627/2
+193901/828
+813.5/234.18
+pf(3.47,2,828,lower.tail=F)
+1627/193901
+binom(1)
+bnorm(1)
+dbinom(18:100,100,0.11)
+sum(dbinom(18:100,100,0.11)()
+)
+sum(dbinom(18:100,100,0.11))
+sum(dbinom(17:100,100,0.11))
+sum(dbinom(0:100,100,0.11))
+sum(dbinom(11:100,100,0.11))
+sum(dbinom(15:100,100,0.11))
+sum(dbinom(17:100,100,0.11))
+112/625
+513/625
+46*0.1792
+579*0.1792
+46*0.8208
+579*0.8208
+0.05*0.93/(0.05*0.93+0.95*0.03)
+1-(3819.99/15079.02*251/243)
+1-(3819.99/15079.02*251/244)
+1-(3819.99/15079.02*251/243)
+36.5 + 3*73
+49 + 12 * 98
+36.5 + 73*12
+49 + 98*3
+0.43*12
+5.59*sqrt(12)
+((0.43*12-0.08*12)/(sqrt(12)*5.59))
+0.49*12
+2.90*sqrt(12)
+((0.49*12-0.08*12)/(sqrt(12)*2.90))
+1.28*12
+8.45*sqrt(12)
+((1.28*12-0.08*12)/(sqrt(12)*8.45))
+1.28/3+0.49/3+0.43/3
+1.28*-0.22+0.49*1.71+0.43*-0.49
+1.28*-0.74+0.49*1.15+0.43*-0.58
+1.28*-0.74+0.49*1.15+0.43*0.58
+0.43*0.33+0.49*0.33+1.28*0.33
+0.43*-0.22+0.49*1.71+1.28*-0.49
+0.43*-0.74+0.49*1.15+1.28*0.58
+0.43*0.45+0.49*0.28+1.28*0.27
+0.08*0.5 + 1.76*0.5
+0.08*0.38 + 1.76*0.62
+0.08*0.45 + 1.76*0.55
+6.53*0.55 +
+0
+6.53*0.55
+6.53*sqrt(0.55)
+6.53*0.55^2
+6.53*sqrt(0.55)
+6.53*0.55
+-197*0.55
+((0.0043*0.23+0.0049*0.87+0.0128*-0.10)+(0.0559*0.23+0.0029*0.87+0.0845*-0.10)*1.96)*100000
+((0.0043*0.23+0.0049*0.87+0.0128*-0.10)+(0.0559*0.23+0.0029*0.87+0.0845*-0.10)*qnorm(0.05))*100000
+((0.0043*0.23+0.0049*0.87+0.0128*-0.10)+(0.0559*0.23+0.0029*0.87+0.0845*-0.10)*qnorm(0.025))*100000
+(0.0040 + 0.0284*qnorm(0.05))*100000
+0.23 *1.00139  + 0.87 *0.16639 -0.10 *1.5262
+(0.0040 + 0.0284*qnorm(0.05))*100000
+qnorm(0.05)
+(0.0040 + 0.0284*qnorm(0.05))*100000
+log((0.0040 + 0.0284*qnorm(0.05))*100000)
+q()
+library(plyr)
+download.file("https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2",destfile="data.csv.bz2",method="curl")#
+# documentation#
+download.file("https://d396qusza40orc.cloudfront.net/repdata%2Fpeer2_doc%2Fpd01016005curr.pdf",destfile="data_doc.pdf",method="curl")#
+download.file("https://d396qusza40orc.cloudfront.net/repdata%2Fpeer2_doc%2FNCDC%20Storm%20Events-FAQ%20Page.pdf",destfile="data_doc_QA.pdf",method="curl")
+set.seed(1)#
+n = 100#
+errors <- rnorm(n, mean=0, sd=0.3)#
+Z1_t    <- runif(n, min=0.5, max=1)#
+u_t    <- runif(n, min=0, max=1)#
+Z2_t   <- if (u_t <= 0.3 && Z1_t <= 0.8) {1} else {0}#
+log_y_t <- 0.5 - 2.5*log(Z1_t) + 0.8*Z2_t + errors#
+y_t <- exp(log_y_t)
+plot(Z1_t, y_t)
+plot(Z1_t, y_t, col=Z2_t, xlab="discount factor", ylab="sales amount")
+plot(Z1_t, y_t, xlab="discount factor", ylab="sales amount")
+library(ggplot2)
+library(lattice)
+xyplot(y_t ~ Z1_t | Z2_t)
+Z2_t
+if (u_t <= 0.3 && Z1_t <= 0.8) {1} else {0}
+Z1_t
+Z2_t
+u_t
+u_t <= 0.3
+u_t <= 0.3 && Z1_t <= 0.8
+u_t <= 0.3 & Z1_t <= 0.8
+Z2_t   <- if (u_t <= 0.3 & Z1_t <= 0.8) {1} else {0}
+tmp    <- u_t <= 0.3 & Z1_t <= 0.8
+tmp
+if (tmp) 1 else 0
+tmp    <- u_t <= 0.3 & Z1_t <= 0.8#
+gen_Z2 <- function(x){#
+	tmp <- function(y){#
+		if (y) {1} else {0}	#
+	}#
+	sapply(x,tmp)#
+}#
+Z2_t   <- gen_Z2(tmp)
+Z2_t
+log_y_t <- 0.5 - 2.5*log(Z1_t) + 0.8*Z2_t + errors#
+y_t <- exp(log_y_t)#
+#plot(Z1_t, y_t, xlab="discount factor", ylab="sales amount")#
+xyplot(y_t ~ Z1_t | Z2_t)
+set.seed(1)#
+n = 100#
+errors <- rnorm(n, mean=0, sd=0.3)#
+Z1_t    <- runif(n, min=0.5, max=1)#
+u_t    <- runif(n, min=0, max=1)#
+tmp    <- u_t <= 0.3 & Z1_t <= 0.8#
+gen_Z2 <- function(x){#
+	tmp <- function(y){#
+		if (y) {1} else {0}	#
+	}#
+	sapply(x,tmp)#
+}#
+Z2_t   <- gen_Z2(tmp)#
+log_y_t <- 0.5 - 2.5*log(Z1_t) + 0.8*Z2_t + errors#
+y_t <- exp(log_y_t)#
+#plot(Z1_t, y_t, xlab="discount factor", ylab="sales amount")#
+xyplot(y_t ~ Z1_t | Z2_t)
+dataset.1 <- data.frame(y_t=y_t, Z1_t=Z1_t, Z2_t=Z2_t)
+dataset.1
+write.csv(dataset.1, file="data1.csv")
+data.1 <- read.csv("data1.csv")
+data.1
+model.1 <- lm(y_t ~ 1, data=data.1)
+model.1
+model.2 <- lm(y_t ~ Z1_t, data=data.1)
+model.2
+summary(model.2)
+model.3 <- lm(y_t ~ Z1_t + Z2_t, data=data.1)
+summary(model.3)
+model.4 <- lm(y_t ~ log(Z1_t), data=data.1)
+summary(model.4)
+model.1 <- lm(y_t ~ 1, data=data.1)#
+model.2 <- lm(y_t ~ Z1_t, data=data.1)#
+model.3 <- lm(y_t ~ Z1_t + Z2_t, data=data.1)#
+model.4 <- lm(y_t ~ log(Z1_t), data=data.1)#
+model.5 <- lm(y_t ~ log(Z2_t) + Z2_t, data=data.1)#
+model.6 <- lm(log(y_t) ~ 1, data=data.1)#
+model.7 <- lm(log(y_t) ~ Z1_t, data=data.1)#
+model.8 <- lm(log(y_t) ~ Z1_t + Z2_t, data=data.1)#
+model.9 <- lm(log(y_t) ~ log(Z1_t), data=data.1)#
+model.10 <-lm(log(y_t) ~ log(Z1_t) + Z2_t, data=data.1)
+model.1 <- lm(y_t ~ 1, data=data.1)#
+model.2 <- lm(y_t ~ Z1_t, data=data.1)#
+model.3 <- lm(y_t ~ Z1_t + Z2_t, data=data.1)#
+model.4 <- lm(y_t ~ log(Z1_t), data=data.1)#
+model.5 <- lm(y_t ~ log(Z1_t) + Z2_t, data=data.1)#
+model.6 <- lm(log(y_t) ~ 1, data=data.1)#
+model.7 <- lm(log(y_t) ~ Z1_t, data=data.1)#
+model.8 <- lm(log(y_t) ~ Z1_t + Z2_t, data=data.1)#
+model.9 <- lm(log(y_t) ~ log(Z1_t), data=data.1)#
+model.10 <-lm(log(y_t) ~ log(Z1_t) + Z2_t, data=data.1)
+summary(model.10)
+plot(Z1_t, y_t, data=data.1)
+abline(model.10)
+abline(model.10, lwd=1, col="blue")
+predict(model.10, data=data.1)
+pred <- predict(model.10, data=data.1)
+points(x=data.1$Z1_t, y=pred, col="red")
+points(x=data.1$Z1_t, y=exp(pred), col="red")
+plot(x=Z1_t, y=y_t)#
+pred <- predict(model.10, data=data.1)#
+points(x=data.1$Z1_t, y=exp(pred), col="red")
+summary(model.10)
+plot(x=X, y=log(y_t), data=data.1)
+names(data.1)
+plot(x=X, y=log(y_t))
+plot(x=X, y=log(y_t), data=data.1)
+plot(x=seq(nrow(data.1)), y=log(y_t), data=data.1)
+plot(x=seq(nrow(data.1)), y=log(y_t), data=data.1, ylim=c(-2,4))
+points(x=as.integer(names(pred)), y=pred, col="red")
+plot(x=seq(nrow(data.1)), y=log(y_t), data=data.1, ylim=c(-2,4),type="l")
+line(x=as.integer(names(pred)), y=pred, col="red")
+lines(x=as.integer(names(pred)), y=pred, col="red")
+abline(h=0, lty=2)
+lines(x=as.integer(names(pred)), y=pred-log(y_t), col="blue")
+data.2#
+set.seed(1)#
+price.1 <- runif(2000, min=0.7, max=1.0)#
+price.2 <- runif(2000, min=0.5, max=0.8)#
+price.3 <- runif(2000, min=0.7, max=0.9)#
+#
+u_t <- runif(2000, min=0, max=1)
+gen_disp <- function(u, price, thre){#
+	res = c()#
+	for (i in 1:len(u)){#
+		if (u[i]<=0.3 && price[i] <= thre) { res = c(res, 1) #
+			} else { res = c(res,0)}		#
+	}#
+	return(res);#
+}#
+disp.1 <- gen_disp(u_t, price.1, 0.8)#
+disp.2 <- gen_disp(u_t, price.2, 0.7)#
+disp.3 <- gen_disp(u_t, price.3, 0.8)
+u_t
+len(u)
+length(u)
+length(u_t)
+gen_disp <- function(u, price, thre){#
+	res = c()#
+	for (i in 1:length(u)){#
+		if (u[i]<=0.3 && price[i] <= thre) { res = c(res, 1) #
+			} else { res = c(res,0)}		#
+	}#
+	return(res);#
+}#
+disp.1 <- gen_disp(u_t, price.1, 0.8)#
+disp.2 <- gen_disp(u_t, price.2, 0.7)#
+disp.3 <- gen_disp(u_t, price.3, 0.8)
+V1 <-  0.5 - 3.0 * log(price.1) + 0.8 * disp.1#
+V2 <- -0.5 - 3.0 * log(price.2) + 0.8 * disp.2#
+V3 <-      - 3.0 * log(price.1) + 0.8 * disp.3
+V1
+u_t
+disp.1
+disp.2
+disp.3
+p1 <- exp(V1)/(exp(V1) + exp(V2) + exp(V3))#
+p2 <- exp(V2)/(exp(V1) + exp(V2) + exp(V3))#
+p3 <- exp(V3)/(exp(V1) + exp(V2) + exp(V3))
+p1
+set.seed(1)#
+price.1 <- runif(2000, min=0.7, max=1.0)#
+price.2 <- runif(2000, min=0.5, max=0.8)#
+price.3 <- runif(2000, min=0.7, max=0.9)#
+#
+u_t <- runif(2000, min=0, max=1)#
+gen_disp <- function(u, price, thre){#
+	res = c()#
+	for (i in 1:length(u)){#
+		if (u[i]<=0.3 && price[i] <= thre) { res = c(res, 1) #
+			} else { res = c(res,0)}		#
+	}#
+	return(res);#
+}#
+disp.1 <- gen_disp(u_t, price.1, 0.8)#
+disp.2 <- gen_disp(u_t, price.2, 0.7)#
+disp.3 <- gen_disp(u_t, price.3, 0.8)#
+#
+V1 <-  0.5 - 3.0 * log(price.1) + 0.8 * disp.1#
+V2 <- -0.5 - 3.0 * log(price.2) + 0.8 * disp.2#
+V3 <-      - 3.0 * log(price.1) + 0.8 * disp.3#
+p1 <- exp(V1)/(exp(V1) + exp(V2) + exp(V3))#
+p2 <- exp(V2)/(exp(V1) + exp(V2) + exp(V3))#
+p3 <- exp(V3)/(exp(V1) + exp(V2) + exp(V3))#
+#
+u_t <- runif(2000, min=0, max=1) # probability term #
+gen_y_t <- function(u_t, p1, p2, p3){#
+	res=c()#
+	for (i in 1:length(u_t)){#
+		val = 0#
+		if ( 0 <= u_t[i] && u_t[i] <= p1[i]){#
+			val = 1#
+		} else if ( p1[i] < u_t[i] && u_t[i] <= p1[i] + p2[i]){#
+			val = 2#
+		} else {#
+			val = 3#
+		}#
+		res = c(res, val);#
+	}#
+	return(res)#
+}#
+y_t <- gen_y_t(u_t, p1, p2, p3)
+y_t
+table(y_t)
+data.2 <- data.frame(y_t=y_t#
+	, price.1=price.1, display.1 = disp.1, V1 = V1, p1 = p1#
+	, price.2=price.2, display.2 = disp.2, V2 = V2, p2 = p2#
+	, price.3=price.3, display.3 = disp.3, V3 = V2, p2 = p3#
+	)
+set.seed(1)#
+price.1 <- runif(2000, min=0.7, max=1.0)#
+price.2 <- runif(2000, min=0.5, max=0.8)#
+price.3 <- runif(2000, min=0.7, max=0.9)#
+#
+u_t <- runif(2000, min=0, max=1)#
+gen_disp <- function(u, price, thre){#
+	res = c()#
+	for (i in 1:length(u)){#
+		if (u[i]<=0.3 && price[i] <= thre) { res = c(res, 1) #
+			} else { res = c(res,0)}		#
+	}#
+	return(res);#
+}#
+disp.1 <- gen_disp(u_t, price.1, 0.8)#
+disp.2 <- gen_disp(u_t, price.2, 0.7)#
+disp.3 <- gen_disp(u_t, price.3, 0.8)#
+#
+V1 <-  0.5 - 3.0 * log(price.1) + 0.8 * disp.1#
+V2 <- -0.5 - 3.0 * log(price.2) + 0.8 * disp.2#
+V3 <-      - 3.0 * log(price.1) + 0.8 * disp.3#
+p1 <- exp(V1)/(exp(V1) + exp(V2) + exp(V3))#
+p2 <- exp(V2)/(exp(V1) + exp(V2) + exp(V3))#
+p3 <- exp(V3)/(exp(V1) + exp(V2) + exp(V3))#
+#
+u_t <- runif(2000, min=0, max=1) # probability term #
+gen_y_t <- function(u_t, p1, p2, p3){#
+	res=c()#
+	for (i in 1:length(u_t)){#
+		val = 0#
+		if ( 0 <= u_t[i] && u_t[i] <= p1[i]){#
+			val = 1#
+		} else if ( p1[i] < u_t[i] && u_t[i] <= p1[i] + p2[i]){#
+			val = 2#
+		} else {#
+			val = 3#
+		}#
+		res = c(res, val);#
+	}#
+	return(res)#
+}#
+y_t <- gen_y_t(u_t, p1, p2, p3)#
+data.2 <- data.frame(y_t=y_t#
+	, price.1=price.1, display.1 = disp.1, V1 = V1, p1 = p1#
+	, price.2=price.2, display.2 = disp.2, V2 = V2, p2 = p2#
+	, price.3=price.3, display.3 = disp.3, V3 = V2, p2 = p3#
+	)
+write.csv(data.2, "data2.csv")
+data.2
+data.2$person <- rep(1:20, length=2000)
+data.2
+write.csv(data.2, "data2.csv")
+data.2 <- read.csv("data2.csv")
+data.2.sub1 <- subset(data.2, data.2$person==1)
+plot(x=seq(20), data.2.sub1$y_t)
+length(seq(20))
+data.2.sub1$y_t
+data.2$person <- rep(1:100, length=2000)#
+write.csv(data.2, "data2.csv")#
+## --------------------------------------------------------------------#
+# analysis#
+data.2 <- read.csv("data2.csv")#
+data.2.sub1 <- subset(data.2, data.2$person==1)#
+plot(x=seq(20), data.2.sub1$y_t)
+mfrow(c(2,1))#
+data.2.sub1 <- subset(data.2, data.2$person==1)#
+plot(x=seq(20), data.2.sub1$y_t)#
+abline(h=1, lty=2); abline(h=2, lty=2); abline(h=3, lty=2);
+par(mfrow(c(2,1)))
+par(mfrow=c(2,1))
+data.2.sub1 <- subset(data.2, data.2$person==1)#
+plot(x=seq(20), data.2.sub1$y_t)#
+abline(h=1, lty=2); abline(h=2, lty=2); abline(h=3, lty=2);
+plot(x=seq(20), data.2.sub1$price.1, type="l", lty=1, col="black")
+lines(x=seq(20), y=data.2.sub1$price.2, lty=2, col="red")
+par(mfrow=c(2,1))#
+data.2.sub1 <- subset(data.2, data.2$person==1)#
+plot(x=seq(20), data.2.sub1$y_t)#
+abline(h=1, lty=2); abline(h=2, lty=2); abline(h=3, lty=2);#
+plot(x=seq(20), data.2.sub1$price.1, type="l", lty=1, col="black", #
+	ylim=c(0.0, 1.0))#
+lines(x=seq(20), y=data.2.sub1$price.2, lty=2, col="red")#
+lines(x=seq(20), y=data.2.sub1$price.3, lty=3, col="blue")
+for (i in 0:10){ abline(h=0.1*i, lty=3); }
+model.1.1 <- lm(V_1 ~ log(price.1) + display.1, data=data.2)
+model.1.1 <- lm(V1 ~ log(price.1) + display.1, data=data.2)
+summary(model.1.1)
+library(mlogit)
+install.packages("mlogit")
+library(mlogit)
+mlogit.data(data.2, shape="wide", choice=y_t)
+data.2
+names(data.2)
+head(data.2)
+mlogit.data(data.2, shape="wide", choice="y_t", varying=3:16)
+mlogit.data(data.2, shape="wide", choice="y_t")
+data.2.mlogit <- mlogit.data(data.2, shape="wide", choice="y_t")
+mlogit

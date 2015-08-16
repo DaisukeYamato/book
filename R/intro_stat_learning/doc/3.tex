@@ -1,0 +1,110 @@
+% 3
+%\documentclass[comp]{icu} % 提出用のフォーマット
+\documentclass{jsbook}
+%\usepackage[dvips]{graphicx}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{verbatim}
+
+\begin{document}
+%\maketitle % これで中表紙ができる
+%\frontmatter
+%\tableofcontents\newpage
+%\listoftables\listoffigures
+%\input{acknowledgment}
+%\mainmatter
+\setlength{\baselineskip}{2em} % 行間の自動調整を停止したので
+                               % 本文の直前にこの1行を加えて対処をお願いします
+\setcounter{chapter}{2}
+\chapter{線形回帰 (Linear Regression)}
+この章では、教師つき学習の単純なアプローチの一つである線形回帰について述べる。
+線形回帰は連続変数を目的変数とする予測によく用いられる。
+線形回帰は単純ではあるが、より高度な機械学習を学ぶ前に
+マスターしておかなければならない事をいくつも含んでいる。
+
+２章で紹介した広告と売上データを思い出してほしい。
+ここでは、以下のような問いに答えられることを目指す。
+\begin{enumerate}
+\item 広告出稿と売上に関係があるか？
+\item どの程度広告出稿と売上に関係があるのか？
+\item 売上に寄与しているのはどのメディアか？
+\item 売上における広告出稿それぞれの効果をどれくらい正確に推定できるのか？
+\item どの程度正確に未来の売上を予測できるか？
+\item 関係性は線形であるか？
+\item 広告メディアのシナジーはあるのか？
+\end{enumerate}
+
+\section{単変数線形回帰(Simple Linear Regression)}
+連続値$Y$を１つの説明変数$X$で予測することを考える。
+$X$と$Y$に線形関係が近似的にあると仮定する、すなわち、
+\begin{equation}
+Y \approx \beta_0 + \beta_1 X.
+\end{equation}
+ここで、"$\approx$"は"近似的にモデル化される"という意味である。
+よく$Y$を$X$で回帰するという。
+例えば、売上をTVで線形回帰すると、
+$$\text{sales} \approx \beta_0 + \beta_1 \times TV.$$
+ここで$\beta_0$は切片、$\beta_1$は傾きと呼ぶ。
+これらを係数といったり、パラメータといったりする。
+トレーニングデータを用いて、$\hat{\beta}_0$と$\hat{\beta}_1$を算出すると、
+これらを用いてTV adを説明変数とする予測ができる:
+\begin{equation}
+	\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x
+\end{equation}
+ここで、$\hat{y}$は$X=x$としたときの予測値である。
+
+\subsection{係数の算出}
+係数$\beta_0$、$\beta_1$は未知なので、$n$個のデータ
+$$
+(x_1, y_1), (x_2, y_2), \cdots, (x_n, y_n)
+$$
+から算出する必要がある。
+その際、（トレーニング）データをよく再現できるように
+$\hat{\beta}_0, \hat{\beta}_1$を決めるということにする。
+ここで、"よく再現できる"というのは、データと予測値がどれくらい
+近いか、もしくは離れているかを判断する、"近さ"を定義する必要がある。
+よく用いられるのは、{\it{least squares}}を最小にするように係数を算出する方法がある。
+それに代わる方法は６章で考える。
+
+データの$i$番目に基づく予測を、$\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x_i$とする。
+このとき、$e_i = y_i - \hat{y}_i$を$i$番目の残差({\it{residual}})とよぶ。
+{\it{RSS (residual sum of squares)}}を以下の式で定義する:
+$$
+\text{RSS} = e_1^2 + e_2^2 + \cdots + e_n^2,
+$$
+もしくは、
+\begin{equation}
+\text{RSS} = (y_1 - \hat{\beta}_0 - \hat{\beta}_1 x_1)^2 + (y_2 - \hat{\beta}_0 - \hat{\beta}_1 x_2)^2
+	+ \cdots + (y_n - \hat{\beta}_0 - \hat{\beta}_1 x_n)^2.
+\end{equation}
+least squaresのアプローチは、RSSを最小にするように$\hat{\beta}_0$、$\hat{\beta}_1$を
+決める。
+最小値をとる係数は、以下の式で計算できる（微分して導出も可能であるが、ここでは省略）:
+\begin{equation}
+\begin{gathered}
+\hat{\beta}_1 = \frac{\sum_{i=1}^n (x_i - \bar{x}) (y_i - \bar{y})}{\sum_{i=1}^n (x_i - x)^2}, \\
+\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x},
+\end{gathered}
+\end{equation}
+ここで、$\bar{y} \equiv \frac{1}{n}\sum_{i=1}^n y_i$、
+$\bar{x} \equiv \frac{1}{n} \sum_{i=1}^n x_i$であり、標本平均である。
+
+Figure 3.1に"Advertising"データで線形回帰させたフィッティングを示している。
+ここで$\hat{\beta}_0= 7.03, \hat{\beta}_1 = 0.0475$である。
+言い換えれば、TV広告に$\$1,000$つぎ込むと、
+大体47.5売上が上がる、ということである。
+Figure 3.2にRSSを$\beta_0$と$\beta_1$の関数としてプロットしている。
+RSS最小のところが、先ほどの値である。
+
+\subsection{係数算出の精度評価}
+(2.1)で$X$と$Y$に真の関係$Y = f(X) + \varepsilon$があったと仮定しており、
+ここで$f$は未知の関数、$\varepsilon$は平均0のランダム誤差である。
+もし、$f$が近似的に線形関数だとすると、関係性は以下の式で表せる:
+\begin{equation}
+	Y = \beta_0 + \beta_1 X + \varepsilon.
+\end{equation}
+ここで$\beta_0$は切片、すなわち、$X=0$のときの$Y$の期待値である。
+$\beta_1$は傾きで、$X$が１単位上がるときの平均の増加分を示す。
+誤差項はこの単純な回帰で捉えられない部分のすべての誤差を含む。
+
+\end{document}
