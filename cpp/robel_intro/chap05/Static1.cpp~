@@ -1,0 +1,15 @@
+#include <iostream>
+#include <algorithm> // for fill_n
+using namespace std;
+
+// check for address consistency
+void CheckAddress_Sub();
+void CheckAddress_Sub2();
+
+void CheckAddress() {
+  cout << "check for address is static or not" << endl;
+
+  CheckAddress_Sub();
+  CheckAddress_Sub2();
+  CheckAddress_Sub();
+}

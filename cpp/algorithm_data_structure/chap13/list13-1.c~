@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+#define MAX_STATION (10)
+
+typedef struct TAG_STATION {
+  char name[256];
+  struct TAG_STATION *transitions[MAX_STATION];
+} STATION;
+
+void init_station(STATION* station, char* name){
+  int i;
+  for (i=0; i<MAX_STATION; i++){
+    station -> transitions[i] = NULL; // not connected on each station.
+  }
+}

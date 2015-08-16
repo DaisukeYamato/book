@@ -1,0 +1,10 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+using namespace std;
+
+class IObject {
+public:
+  virtual ~IObject() {}
+  virtual string GetString() const = 0;
+};

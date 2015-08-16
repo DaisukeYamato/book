@@ -1,0 +1,13 @@
+#include <iostream>
+#include <utility>
+using namespace std;
+
+template <typename TYPE>
+class Value {
+public:
+  Value(const TYPE& value) : m_value(value) {}
+  void Show() {cout << m_value << endl; }
+
+private:
+  TYPE m_value;
+};

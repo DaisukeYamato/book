@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+class ABase {
+public:
+  ABase(int x) : m_x(x) {}
+  virtual ~ABase() {}
+
+public:
+  void Show() {cout << m_x << endl; }
+private:
+  int m_x;
+};

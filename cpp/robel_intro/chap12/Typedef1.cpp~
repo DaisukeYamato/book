@@ -1,0 +1,19 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+using namespace std;
+
+class Calculator {
+public:
+  void Run();
+
+private:
+  bool Input();
+  bool Calculate();
+  void ShowResult() const;
+
+private:
+  int m_a, m_b;
+  char m_op;
+  int m_result;
+};

@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+// input function
+//   true : input >= 0
+//   false: input < 0
+bool Input(double& n){
+  cin >> n;
+  return n >= 0;
+}

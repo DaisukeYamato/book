@@ -1,0 +1,6 @@
+all: Address1
+
+Address1: Address1.cpp
+	g++ -o $@ $<
+
+

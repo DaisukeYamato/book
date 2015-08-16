@@ -1,0 +1,13 @@
+#include <iostream>
+#include <exception>
+using namespace std;
+
+class Hoge {
+public:
+  Hoge();
+  virtual ~Hoge();
+};
+
+class Base {
+  
+};

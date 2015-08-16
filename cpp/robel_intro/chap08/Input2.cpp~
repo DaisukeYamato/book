@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+bool SkipOnError(istream& istr){
+  if (istr.fail()){
+    if (istr.eof()){
+      exit(EXIT_FAILURE);
+    }
+
+    // skip one character
+    char ch;
+    istr.clear();
+    istr >> ch;
+  }
+}

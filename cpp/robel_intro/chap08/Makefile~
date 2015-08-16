@@ -1,0 +1,34 @@
+all: String3 String4 StringStream1 StringStream2 \
+    File1 File2 File3 File3b
+
+.cpp.o:
+	g++ -o $@ -c $<
+
+########################################################
+# compile info (.cpp -> .o dependency)
+
+########################################################
+# main
+String3: String3.o
+	g++ -o $@ $<
+
+String4: String4.o
+	g++ -o $@ $<
+
+StringStream1: StringStream1.o
+	g++ -o $@ $<
+
+StringStream2: StringStream2.o
+	g++ -o $@ $<
+
+File1: File1.o
+	g++ -o $@ $<
+
+File2: File2.o
+	g++ -o $@ $<
+
+File3: File3.o
+	g++ -o $@ $<
+
+File3b: File3b.o
+	g++ -o $@ $<

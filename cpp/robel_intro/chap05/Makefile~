@@ -1,0 +1,5 @@
+all: Array4
+
+Array4: Array4.cpp
+	g++ -o $@ $<
+

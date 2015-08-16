@@ -1,0 +1,11 @@
+#include "TaskManager.h"
+
+void TaskManager::Execute() {
+  for (SizeType i=0; i<m_task.size(); ) {
+    if (m_task[i]()) {
+      ++i;
+    } else {
+      Unregister(i);
+    }
+  }
+}

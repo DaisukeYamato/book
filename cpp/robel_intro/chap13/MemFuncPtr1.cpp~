@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cassert>
+using namespace std;
+
+// array size
+#define ARRAY_SIZE(array) (sizeof (array) / sizeof *(array))
+
+class Calculator {
+public:
+  void Run();
+
+private:
+  bool Input();
+  void Calculate();
+
+private:
+  static int Add(int a, int b) { return a + b; }
+  static int Sub(int a, int b) { return a - b; }
+  static int Mul(int a, int b) { return a * b; }
+  static int Div(int a, int b) { return a / b; }
+
+  typdef int (*FpOp2)(int a, int b);
+  static const FpOp2 FP_OPERATOR[];
+
+  //
+  static const char* const OPERATION_NAME[];
+
+private:
+  int m_a, m_b;
+};
+

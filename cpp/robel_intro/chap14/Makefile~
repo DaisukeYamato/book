@@ -1,0 +1,12 @@
+all: ShortCircuit1
+
+.cpp.o:
+	g++ -o $@ -c $<
+
+########################################################
+# compile info (.cpp -> .o dependency)
+
+########################################################
+# main
+ShortCircuit1: ShortCircuit1.o
+	g++ -o $@ $<

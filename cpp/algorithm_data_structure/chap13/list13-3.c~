@@ -1,0 +1,14 @@
+#include <stdio.h>
+#define STATION_NUMBER (6)
+
+char* stations[] = {
+  "äôëq", "ì°ëÚ", "â°ïl", "â°ê{âÍ", "äùÉñçË", "ìåãû" };
+
+int adjacency_matrix[STATION_NUBMER][STATION_NUMBER] = {
+  {0, 1, 1, 1, 0, 0}, 
+  {1, 0, 1, 0, 1, 0}, 
+  {1, 1, 0, 0, 0, 0}, 
+  {1, 0, 0, 0, 0, 0}, 
+  {0, 1, 0, 0, 0, 0}, 
+  {0, 0, 1, 0, 0, 0}, 
+}

@@ -1,0 +1,9 @@
+#ifndef VALUEFACTORY_H_
+#define VALUEFACTORY_H_
+
+class Value;
+
+class ValueFactory {
+  
+};
+#endif // VALUEFACTORY_H_

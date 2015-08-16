@@ -1,0 +1,14 @@
+#ifndef STREAM_H_
+#define STREAM_H_
+
+// base class
+class Stream {
+ public:
+  double Get() const; // get value
+  virtual bool Set();
+  
+ protected:
+  double m_n; // current value
+};
+
+#endif // STREAM_H_

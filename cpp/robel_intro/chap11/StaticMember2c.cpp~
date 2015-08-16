@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+class Count {
+public:
+  Count();
+  virtual ~Count();
+};
+
+static int m_count;
+
+Count::Count() { m_count++; }

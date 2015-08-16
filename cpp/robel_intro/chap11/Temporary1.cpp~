@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+
+class Hoge {
+public:
+  Hoge(int n) : m_n(n) { cout << "Hoge   : " << m_n << endl; }
+  Hoge(const Hoge&)    { cout << "Hoge&  : " << m_n << endl; }
+  void operator=(const Hoge&) { cout << "Hoge=  : " << m_n << endl; }
+};

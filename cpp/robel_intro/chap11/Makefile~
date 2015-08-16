@@ -1,0 +1,12 @@
+all: StaticMember1
+
+.cpp.o:
+	g++ -o $@ -c $<
+
+########################################################
+# compile info (.cpp -> .o dependency)
+
+########################################################
+# main
+StaticMember1: StaticMember1.o
+	g++ -o $@ $<

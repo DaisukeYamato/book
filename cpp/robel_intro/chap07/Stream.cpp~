@@ -1,0 +1,15 @@
+#include "Stream.h"
+#include <iostream>
+using namespace std;
+
+// get value
+double Stream::Get() const {
+  return m_n;
+}
+
+// Set value
+bool Stream::Set() {
+  cout << "Stream::Set" << endl;
+  m_n = -1;
+  return false;
+}

@@ -1,0 +1,9 @@
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <typeinfo>
+using namespace std;
+
+void CheckType(const ostream& ostr) {
+  
+}

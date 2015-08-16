@@ -1,0 +1,14 @@
+#include "FileException.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <cstdlib>
+using namespace std;
+
+// open
+void Open(ifstream& file, const char* filename) {
+  file.open(filename);
+  if (!file.is_open()){
+    throw FileException("cannot open file!!");
+  }
+}

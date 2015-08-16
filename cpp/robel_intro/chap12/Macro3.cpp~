@@ -1,0 +1,10 @@
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+using namespace std;
+
+const char* Open(ifstream& file, const char* filename){
+  file.open(filename);
+  return file.is_open() ? NULL : "cannot open file!!";
+}
+

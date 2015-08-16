@@ -1,0 +1,9 @@
+#include "HalfInputStream.h"
+#include <iostream>
+using namespace std;
+
+// basic funtion
+void HalfInputStream::SetBase() {
+  cin >> m_n;
+  m_n /= 2;
+}

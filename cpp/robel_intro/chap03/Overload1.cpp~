@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int Abs(int a){
+  if (a < 0){
+    return -a;
+  } else {
+    return a;
+  }
+}
+
+double Abs(double a){
+  if (a < 0) {
+    return -a;
+  } else {
+    return a;
+  }
+}

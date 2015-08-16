@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+// Seireki -> Showa 
+// invalid value return 0
+int WesternToShouwa(int western){
+  if (1926 <= western && western <= 1989) {
+    return western - 1925;
+  }
+  else {
+    return 0;
+  }
+}

@@ -1,0 +1,19 @@
+#include "InputStream.h"
+#include "ArrayStream.h"
+#include <iostream>
+using namespace std;
+
+//
+Stream* CreateStream() {
+  char ch;
+
+  while(true){
+    cout << "i: InputStream, a: ArrayStream > " << flush;
+    cin >> ch;
+
+    switch(ch) {
+    case 'i':
+      return new InputStream();
+    }
+  }
+}

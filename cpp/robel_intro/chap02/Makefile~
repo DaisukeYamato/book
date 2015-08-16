@@ -1,0 +1,15 @@
+
+all: Variable1 Variable2 Variable4
+
+Variable1: Variable1.cpp
+	g++ -o $@ $<
+
+Variable2: Variable2.cpp
+	g++ -o $@ $<
+
+Variable4: Variable4.cpp
+	g++ -o $@ $<
+
+
+##########################################################
+# endline

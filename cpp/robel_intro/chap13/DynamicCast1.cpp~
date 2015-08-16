@@ -1,0 +1,13 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <typeinfo>
+using namespace std;
+
+string Hoge(ostream& ostr){
+  try {
+    ostringstream& sstr = dynamic_cast<ostringstream&>(ostr);
+
+    sstr.str("")
+  }
+}
