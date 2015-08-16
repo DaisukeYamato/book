@@ -1,0 +1,20 @@
+# test.py
+# # 11.2 Downloading a feed the quick-and-dirty way
+# import urllib;
+# data = urllib.urlopen('http://diveintomark.net/xml/atom.xml').read();
+# print data;
+
+# # 11.3 Debugging HTTP
+# import httplib;
+# httplib.HTTPConnection.debuglevel = 1;
+# import urllib;
+# feeddata = urllib.urlopen('http://diveintomark.net/xml/atom.xml').read();
+
+# 11.4 Introducing urllib2
+import httplib;
+httplib.HTTPConnection.debuglevel = 1;
+import urllib2;
+request = urllib2.Request('http://diveintomark.net/xml/atom.xml');
+opener = urllib2.build_opener();
+feeddata = opener.open(request).read();
+print feeddata;

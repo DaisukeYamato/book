@@ -1,0 +1,7 @@
+# 6.1 (Opening a Non-Existent File)
+fsock = open("/notthere", "r");
+try:
+    fsock = open("/notthere");
+except IOError:
+    print 'The file does not exist, exitting gracefully"
+print "This line will always print";

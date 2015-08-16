@@ -1,0 +1,4 @@
+# import
+import os;
+
+os.chdir('~/work/101_book/python/headFirstPython/chapter4/');

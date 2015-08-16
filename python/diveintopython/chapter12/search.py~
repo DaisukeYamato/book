@@ -1,0 +1,5 @@
+from SOAPpy import WSDL
+
+# you'll need to configure these twov values;
+# see http://www.google.com/apis/
+WSDLFILE = 'c:/Users/daisuke.yamato/work/101_book/python/diveintopython/chapter12/GoogleSearch.wsdl';

@@ -1,0 +1,10 @@
+import re;
+from BaseHTMLProcessor import BaseHTMLProcessor;
+
+class Dialectizer(BaseHTMLProcessor):
+    # extend (called from __init__ in ancestor)
+    # Reset all data attributes
+    self.verbatim = 0;
+    BaseHTMLProcessor.reset(self);
+    
+    def 

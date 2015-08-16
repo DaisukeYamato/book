@@ -1,0 +1,7 @@
+# 7.1 (Matching at the End of a String)
+s = '100 NORTH MAIN ROAD';
+print s.replase('ROAD', 'RD.');
+s = '100 NORTH BROAD ROAD';
+s.replace('ROAD', 'RD.');
+
+print s[:-4] + s[-4:].replace('ROAD', 'RD.');

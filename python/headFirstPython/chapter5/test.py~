@@ -1,0 +1,6 @@
+# import
+import os;
+
+os.chdir('c:/Users/daisuke.yamato/work/101_book/python/headFirstPython/chapter5');
+
+

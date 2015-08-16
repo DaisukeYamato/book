@@ -1,0 +1,32 @@
+import commands;
+
+# # 8.4 Sample test of sgmllib.py
+# # does not work...
+# print commands.getoutput('python c:/Python27/Lib/sgmllib.py c:/Users/daisuke.yamato/work/102_ref/programming/python/diveintopython-5.4/diveintopython-5.4/html/diveintopython.html');
+
+# # 8.5 Introducint urllib
+# import urllib;
+# # sock = urllib.urlopen("http://diveintopython.org/");
+# sock = urllib.urlopen("http://diveintopython.net/");
+# htmlSource = sock.read();
+# sock.close();
+# print htmlSource;
+
+# # 8.6 Introducing urllister.py
+
+# # 8.7 Using urllister.py
+# import urllib, urllister;
+# usock = urllib.urlopen("http://diveintopython.net/");
+# parser = urllister.URLLister();
+# parser.feed(usock.read());
+# usock.close();
+# parser.close();
+# for url in parser.urls: print url;
+
+# # 8.8 Introducing BaseHTMLProcessor
+# pass;
+
+# 8.5 locals and globals p.109
+
+######################################################################
+# endline
