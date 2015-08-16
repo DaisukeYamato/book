@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+/* 1. */
+#define _GNU_SOURCE
+#include <getopt.h>
+
+static void do_head(FILE *f, long nlines);
+
+#define DEFAULT_N_LINES 10
+
+/* 2. */
+static struct option longopts[] = {
+  {"lines", required_argument, NULL, 'n'},
+  {"help",  no_argument,       NULL, 'h'},
+  {0,0,0,0}
+};
+
+int main(int argc, char* argv[]){
+  int opt;
+  long nlines = DEFAULT_N_LINES;
+
+  /* 3. */
+  while ((opt = getopt_long(argc, argv, "n:", longopts, NULL)) != -1){
+	
+  }
+}

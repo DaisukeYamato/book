@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+static void do_grep(regex_t *pat, FILE *src);
+
+static void do_grep(regex_t *pat, FILE *src){
+  char buf[4096];
+
+  while (fgets(buf, sizeof buf, src)) {
+	if (regexec(pat, buf, 0, NULL, 0) == 0){
+	  fputs(buf, stdout);
+	}
+  }
+}

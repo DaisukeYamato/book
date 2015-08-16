@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void){
+  int nx;
+  int *pt = &nx;
+
+  printf("&nx: %lu\n", (unsigned long)&nx);
+  printf(" pt: &lu\n", (unsigned long)&pt);
+}

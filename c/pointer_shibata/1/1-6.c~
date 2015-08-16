@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void){
+  printf("char: %d byte(s).\n", (unsigned)sizeof(char));
+  printf("int : %d byte(s).\n", (unsigned)sizeof(int));
+  printf("long: %d byte(s).\n", (unsigned)sizeof(long));
+
+  return (0);
+}
