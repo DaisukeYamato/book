@@ -1,0 +1,8 @@
+/* 
+   show addresses of array elements
+*/
+#include <stdio.h>
+
+int main(void) {
+  
+}
